@@ -1,0 +1,219 @@
+html, body {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: #eee;
+  font: 13px/1.6 "Old Standard TT", serif, helvetica, verdana, arial, sans-serif;
+  color: #666;
+  margin: 0px;
+  overflow-y: scroll;
+  line-height: 21px;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  line-height: 1.1;
+  margin-top: 0;
+  margin-bottom: .5rem;
+}
+
+header {
+  padding-top: 10px;
+}
+
+header .container {
+  max-width: 1260px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+header .line {
+  border-bottom: solid 4px black;
+  width: 100%;
+}
+
+header .leftCol {
+  width: 40%;
+  float: left;
+}
+
+header .rightCol {
+  text-align: right;
+  float: right;
+  padding-top: 15px;
+}
+
+header .rightCol .name {
+  padding-bottom: 5px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+header .rightCol .career {
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 21px;
+}
+
+header .avatar {
+  background: url("logoArtboard 1.png") no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+
+h2.heading {
+  text-transform: uppercase;
+  margin: 1.75rem 0;
+  border-bottom: solid 1px #aaa;
+  line-height: 0px;
+  font-weight: normal;
+  color: #627788;
+}
+
+h2.heading span {
+  background: #eee;
+  padding-right: 10px;
+}
+
+.container {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+.design {
+  box-sizing: border-box;
+  max-width: 40%;
+  padding-top: 20px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+.line {
+  border-bottom: solid 4px black;
+  width: 100%;
+}
+
+.social {
+  box-sizing: border-box;
+  max-width: 40%;
+}
+
+.work {
+  font-size: 20px;
+}
+
+.social h3 {
+  text-align: center;
+}
+
+#items .portfolio-item:hover {
+  background-color: #d3d3d3;
+  cursor: pointer;
+}
+
+#items {
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-flex-flow: row wrap;
+}
+
+#items .portfolio-item {
+  background: #fff;
+  width: 32%;
+  margin-bottom:2%;
+  text-align: left;
+  box-shadow: 0 2px 0 #d9e1e7;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  border-radius: 3px;
+}
+
+#items .portfolio-item img{
+  border-radius: 3px 3px 0 0;
+}
+
+#items .portfolio-item .text_block{
+  padding: 1.25rem;
+}
+
+#items .portfolio-item h3 {
+  font-size:18px;
+  color:#444;
+}
+
+#items .portfolio-item:nth-child(3n-1) {
+  margin-right:2%;
+  margin-left:2%;
+}
+
+footer {
+  max-width:1260px;
+  margin: 0 auto;
+  padding:10px 20px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*Medium devices up to 850px*/
+@media screen and (min-width: 601px) and (max-width: 850px)  {
+  #items .portfolio-item{
+    width:49%;
+  }
+
+  #items .portfolio-item:nth-child(odd) {
+    margin-right:2%;
+    margin-left:0px;
+  }
+
+  #items .portfolio-item:nth-child(even) {
+    margin-right:0px;
+    margin-left:0px;
+  }
+}
+
+/*Small devices up to 600px*/
+@media screen and (max-width: 600px)  {
+  #items .portfolio-item{
+    width:99%;
+    margin-right:0!important;
+    margin-left:0!important;
+    margin-bottom:20px;
+  }
+}
