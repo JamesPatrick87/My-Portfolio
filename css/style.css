@@ -150,7 +150,6 @@ h2.heading span {
   display: -ms-flexbox;
   display: -webkit-flex;
   -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
 }
 
 #items .portfolio-item {
